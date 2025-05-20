@@ -1,4 +1,11 @@
 terraform {
+  cloud {
+    organization = "terra-cloud-github"
+    workspaces {
+      name = "terraform-workspaces"
+    }
+  }
+
   required_providers {
     azurerm = {
       source  = "hashicorp/azurerm"
