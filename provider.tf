@@ -2,7 +2,7 @@ terraform {
   cloud {
     organization = "terra-cloud-github"
     workspaces {
-      name = "terraform-workspaces"
+      name = "terraform-workspace"
     }
   }
 
@@ -12,9 +12,4 @@ terraform {
       version = "4.27.0"
     }
   }
-}
-
-provider "azurerm" {
-  features {}
-  subscription_id = "b121790a-21a1-4c0f-9bfc-7cb9f6b88fd1"
 }
